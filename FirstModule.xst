@@ -1,11 +1,11 @@
 set -tmpdir "xst/projnav.tmp"
 set -xsthdpdir "xst"
 run
--ifn TestModule.prj
--ofn TestModule
+-ifn FirstModule.prj
+-ofn FirstModule
 -ofmt NGC
 -p xc7a100t-3-csg324
--top TestModule
+-top FirstModule
 -opt_mode Speed
 -opt_level 1
 -power NO

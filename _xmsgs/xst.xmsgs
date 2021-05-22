@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\Amin\MAG\Mips\MIPS\TestModule.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">TestModule</arg>&gt; remains a black box.
-</msg>
-
 </messages>
 
