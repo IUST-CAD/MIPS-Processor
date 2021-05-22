@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Amin/MAG/Mips/MIPS/TestModule.xst" -ofn "C:/Users/Amin/MAG/Mips/MIPS/TestModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 TestModule.ngc TestModule.ngd  
