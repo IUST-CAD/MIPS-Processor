@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Fri May 28 20:03:00 2021
+Mapped Date    : Tue Jun 01 19:01:03 2021
 
 WARNING:LIT:701 - PAD symbol "a<1>" has an undefined IOSTANDARD.
 WARNING:LIT:702 - PAD symbol "a<1>" is not constrained (LOC) to a specific
@@ -23,7 +23,7 @@ INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
 Total REAL time at the beginning of Placer: 34 secs 
-Total CPU  time at the beginning of Placer: 34 secs 
+Total CPU  time at the beginning of Placer: 30 secs 
 
 Phase 1.1  Initial Placement Analysis
 Phase 1.1  Initial Placement Analysis (Checksum:47) REAL time: 36 secs 
@@ -36,38 +36,38 @@ Phase 3.31  Local Placement Optimization (Checksum:47) REAL time: 36 secs
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 .......
-Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:47) REAL time: 37 secs 
+Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:47) REAL time: 38 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:47) REAL time: 37 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:47) REAL time: 38 secs 
 
 Phase 6.3  Local Placement Optimization
 .......
-Phase 6.3  Local Placement Optimization (Checksum:e18fe) REAL time: 38 secs 
+Phase 6.3  Local Placement Optimization (Checksum:e18fe) REAL time: 39 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:e18fe) REAL time: 38 secs 
+Phase 7.5  Local Placement Optimization (Checksum:e18fe) REAL time: 39 secs 
 
 Phase 8.8  Global Placement
 ...
 ................
 ................
-Phase 8.8  Global Placement (Checksum:3dc487e4) REAL time: 38 secs 
+Phase 8.8  Global Placement (Checksum:3dc487e4) REAL time: 39 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:3dc487e4) REAL time: 38 secs 
+Phase 9.5  Local Placement Optimization (Checksum:3dc487e4) REAL time: 39 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:3d7e4d14) REAL time: 38 secs 
+Phase 10.18  Placement Optimization (Checksum:3d7e4d14) REAL time: 39 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:3d7e4d14) REAL time: 38 secs 
+Phase 11.5  Local Placement Optimization (Checksum:3d7e4d14) REAL time: 39 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:3d7e4d14) REAL time: 38 secs 
+Phase 12.34  Placement Validation (Checksum:3d7e4d14) REAL time: 39 secs 
 
-Total REAL time to Placer completion: 38 secs 
-Total CPU  time to Placer completion: 38 secs 
+Total REAL time to Placer completion: 39 secs 
+Total CPU  time to Placer completion: 35 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:2452 - The IOB cin is either not constrained (LOC) to a
@@ -182,8 +182,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                1.38
 
 Peak Memory Usage:  5058 MB
-Total REAL time to MAP completion:  40 secs 
-Total CPU time to MAP completion:   40 secs 
+Total REAL time to MAP completion:  42 secs 
+Total CPU time to MAP completion:   37 secs 
 
 Mapping completed.
 See MAP report file "FirstModule_map.mrp" for details.
