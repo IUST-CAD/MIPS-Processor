@@ -96,12 +96,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1622215967" xil_pn:in_ck="7694791117720551631" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="6118371352672093640" xil_pn:start_ts="1622215944">
+    <transform xil_pn:end_ts="1622557844" xil_pn:in_ck="-5418895120902595485" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="6118371352672093640" xil_pn:start_ts="1622557811">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FirstModule.lso"/>
       <outfile xil_pn:name="FirstModule.ngc"/>
@@ -119,10 +117,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1622215979" xil_pn:in_ck="6882802618971353492" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6765742447443968964" xil_pn:start_ts="1622215967">
+    <transform xil_pn:end_ts="1622557861" xil_pn:in_ck="6882802618971353492" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6765742447443968964" xil_pn:start_ts="1622557844">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FirstModule.bld"/>
@@ -131,11 +128,10 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1622216023" xil_pn:in_ck="6882802618971353493" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1622215979">
+    <transform xil_pn:end_ts="1622557907" xil_pn:in_ck="6882802618971353493" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1622557861">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FirstModule.pcf"/>
       <outfile xil_pn:name="FirstModule_map.map"/>
       <outfile xil_pn:name="FirstModule_map.mrp"/>
@@ -146,10 +142,9 @@
       <outfile xil_pn:name="FirstModule_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1622216083" xil_pn:in_ck="-2726992378776255698" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1622216023">
+    <transform xil_pn:end_ts="1622557963" xil_pn:in_ck="-2726992378776255698" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1622557907">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FirstModule.ncd"/>
       <outfile xil_pn:name="FirstModule.pad"/>
       <outfile xil_pn:name="FirstModule.par"/>
@@ -161,10 +156,9 @@
       <outfile xil_pn:name="FirstModule_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1622216083" xil_pn:in_ck="6882802618971353361" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1622216058">
+    <transform xil_pn:end_ts="1622557963" xil_pn:in_ck="6882802618971353361" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1622557946">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FirstModule.twr"/>
       <outfile xil_pn:name="FirstModule.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
