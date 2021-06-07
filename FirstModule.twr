@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml FirstModule.twx FirstModule.ncd -o FirstModule.twr
 FirstModule.pcf
 
@@ -52,14 +52,14 @@ cin            |sum<1>         |    5.147|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun May 23 01:05:09 2021 
+Analysis completed Wed Jun 02 16:03:04 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4953 MB
+Peak Memory Usage: 5003 MB
 
 
 
