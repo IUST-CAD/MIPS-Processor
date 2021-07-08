@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/Term6/CAD/Project/MIPS-Processor/Pipeline Processor/Pipeline_Processor/MIPS_PP.xst" -ofn "F:/Term6/CAD/Project/MIPS-Processor/Pipeline Processor/Pipeline_Processor/MIPS_PP.syr" 
+xst -intstyle ise -ifn "F:/Term6/CAD/Project/MIPS-Processor/Pipeline Processor/Pipeline_Processor/MIPS_PP.xst" -ofn "F:/Term6/CAD/Project/MIPS-Processor/Pipeline Processor/Pipeline_Processor/MIPS_PP.syr" 

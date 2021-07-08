@@ -1,0 +1,500 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: MIPS_SCP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS_SCP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS_SCP"
+Output Format                      : NGC
+Target Device                      : XC9500XL CPLDs
+
+---- Source Options
+Top Module Name                    : MIPS_SCP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MIPS_SCP.v" in library work
+Compiling verilog include file "datapath.v"
+Compiling verilog include file "adder.v"
+Module <adder> compiled
+Compiling verilog include file "alu32.v"
+Module <FA> compiled
+Compiling verilog include file "flopr_param.v"
+Module <alu32> compiled
+Compiling verilog include file "mux2.v"
+Module <flopr_param> compiled
+Compiling verilog include file "mux4.v"
+Module <mux2> compiled
+Compiling verilog include file "regfile32.v"
+Module <mux4> compiled
+Compiling verilog include file "signext.v"
+Module <registerfile32> compiled
+Compiling verilog include file "sl2.v"
+Module <signext> compiled
+Module <slt2> compiled
+Compiling verilog include file "ram.v"
+Module <Datapath> compiled
+Compiling verilog include file "rom.v"
+Module <ram> compiled
+Compiling verilog include file "control.v"
+Module <rom> compiled
+Module <Controlunit> compiled
+Module <MIPS_SCP> compiled
+No errors in compilation
+Analysis of file <"MIPS_SCP.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MIPS_SCP> in library <work>.
+
+Analyzing hierarchy for module <Datapath> in library <work>.
+
+Analyzing hierarchy for module <Controlunit> in library <work>.
+
+Analyzing hierarchy for module <ram> in library <work> with parameters.
+	bits = "00000000000000000000000000100000"
+	depth = "00000000000000000000000010000000"
+	width = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <rom> in library <work> with parameters.
+	bits = "00000000000000000000000000100000"
+	depth = "00000000000000000000000100000000"
+	width = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <flopr_param> in library <work> with parameters.
+	n = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <adder> in library <work> with parameters.
+	n = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <slt2> in library <work>.
+
+Analyzing hierarchy for module <mux2> in library <work> with parameters.
+	n = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <registerfile32> in library <work>.
+
+Analyzing hierarchy for module <mux2> in library <work> with parameters.
+	n = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <alu32> in library <work>.
+
+Analyzing hierarchy for module <signext> in library <work>.
+
+Analyzing hierarchy for module <FA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MIPS_SCP>.
+Module <MIPS_SCP> is correct for synthesis.
+ 
+Analyzing module <Datapath> in library <work>.
+Module <Datapath> is correct for synthesis.
+ 
+Analyzing module <flopr_param> in library <work>.
+	n = 32'sb00000000000000000000000000100000
+Module <flopr_param> is correct for synthesis.
+ 
+Analyzing module <adder> in library <work>.
+	n = 32'sb00000000000000000000000000100000
+Module <adder> is correct for synthesis.
+ 
+Analyzing module <FA> in library <work>.
+Module <FA> is correct for synthesis.
+ 
+Analyzing module <slt2> in library <work>.
+Module <slt2> is correct for synthesis.
+ 
+Analyzing module <mux2.1> in library <work>.
+	n = 32'sb00000000000000000000000000100000
+Module <mux2.1> is correct for synthesis.
+ 
+Analyzing module <registerfile32> in library <work>.
+WARNING:Xst:2319 - "regfile32.v" line 26: Signal register in initial block is partially initialized. The initialization will be ignored.
+Module <registerfile32> is correct for synthesis.
+ 
+Analyzing module <mux2.2> in library <work>.
+	n = 32'sb00000000000000000000000000000101
+Module <mux2.2> is correct for synthesis.
+ 
+Analyzing module <alu32> in library <work>.
+Module <alu32> is correct for synthesis.
+ 
+Analyzing module <signext> in library <work>.
+Module <signext> is correct for synthesis.
+ 
+Analyzing module <Controlunit> in library <work>.
+Module <Controlunit> is correct for synthesis.
+ 
+Analyzing module <ram> in library <work>.
+	bits = 32'sb00000000000000000000000000100000
+	depth = 32'sb00000000000000000000000010000000
+	width = 32'sb00000000000000000000000000100000
+Module <ram> is correct for synthesis.
+ 
+Analyzing module <rom> in library <work>.
+	bits = 32'sb00000000000000000000000000100000
+	depth = 32'sb00000000000000000000000100000000
+	width = 32'sb00000000000000000000000000100000
+INFO:Xst:2546 - "rom.v" line 19: reading initialization file "memfile.txt".
+WARNING:Xst:2319 - "rom.v" line 19: Signal Imem in initial block is partially initialized. The initialization will be ignored.
+Module <rom> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <registerfile32> has a constant value of 100000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Controlunit>.
+    Related source file is "control.v".
+WARNING:Xst:737 - Found 4-bit latch for signal <ALUControl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit xor2 for signal <PCSrc$xor0000> created at line 123.
+    Summary:
+	inferred   1 Xor(s).
+Unit <Controlunit> synthesized.
+
+
+Synthesizing Unit <ram>.
+    Related source file is "ram.v".
+WARNING:Xst:647 - Input <adr<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4096-bit register for signal <Dmem>.
+Unit <ram> synthesized.
+
+
+Synthesizing Unit <rom>.
+    Related source file is "rom.v".
+WARNING:Xst:647 - Input <adr<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <Imem> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+Unit <rom> synthesized.
+
+
+Synthesizing Unit <flopr_param>.
+    Related source file is "flopr_param.v".
+    Found 32-bit register for signal <q>.
+Unit <flopr_param> synthesized.
+
+
+Synthesizing Unit <slt2>.
+    Related source file is "sl2.v".
+WARNING:Xst:647 - Input <a<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <slt2> synthesized.
+
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "mux2.v".
+Unit <mux2_1> synthesized.
+
+
+Synthesizing Unit <registerfile32>.
+    Related source file is "regfile32.v".
+    Found 1024-bit register for signal <register>.
+Unit <registerfile32> synthesized.
+
+
+Synthesizing Unit <mux2_2>.
+    Related source file is "mux2.v".
+Unit <mux2_2> synthesized.
+
+
+Synthesizing Unit <alu32>.
+    Related source file is "alu32.v".
+WARNING:Xst:737 - Found 32-bit latch for signal <$old_y_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit addsub for signal <old_y_4$addsub0000>.
+    Found 32-bit comparator less for signal <old_y_4$cmp_lt0000> created at line 25.
+    Found 32-bit comparator less for signal <old_y_4$cmp_lt0001> created at line 24.
+    Found 32-bit 15-to-1 multiplexer for signal <old_y_4$mux0001>.
+    Found 32-bit shifter logical left for signal <old_y_4$shift0000> created at line 21.
+    Found 32-bit shifter logical right for signal <old_y_4$shift0001> created at line 22.
+    Found 32-bit shifter arithmetic right for signal <old_y_4$shift0002> created at line 23.
+    Found 32-bit shifter logical left for signal <old_y_4$shift0006> created at line 27.
+    Found 32-bit shifter logical right for signal <old_y_4$shift0007> created at line 28.
+    Found 32-bit shifter arithmetic right for signal <old_y_4$shift0008> created at line 29.
+    Found 32-bit xor2 for signal <old_y_4$xor0000> created at line 20.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   6 Combinational logic shifter(s).
+Unit <alu32> synthesized.
+
+
+Synthesizing Unit <signext>.
+    Related source file is "signext.v".
+Unit <signext> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "adder.v".
+    Found 1-bit adder carry out for signal <AUX_1$addsub0001> created at line 25.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "adder.v".
+WARNING:Xst:646 - Signal <w<32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <Datapath>.
+    Related source file is "datapath.v".
+WARNING:Xst:647 - Input <Instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Datapath> synthesized.
+
+
+Synthesizing Unit <MIPS_SCP>.
+    Related source file is "MIPS_SCP.v".
+Unit <MIPS_SCP> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 129
+ 1-bit adder carry out                                 : 64
+ 2-bit adder                                           : 64
+ 32-bit addsub                                         : 1
+# Registers                                            : 161
+ 32-bit register                                       : 161
+# Latches                                              : 2
+ 32-bit latch                                          : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 2
+ 32-bit comparator less                                : 2
+# Multiplexers                                         : 4
+ 32-bit 128-to-1 multiplexer                           : 1
+ 32-bit 15-to-1 multiplexer                            : 1
+ 32-bit 32-to-1 multiplexer                            : 2
+# Logic shifters                                       : 6
+ 32-bit shifter arithmetic right                       : 2
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <datapathcomp> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <controller> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <dmem> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <imem> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 129
+ 1-bit adder carry out                                 : 64
+ 2-bit adder                                           : 64
+ 32-bit addsub                                         : 1
+# Latches                                              : 2
+ 32-bit latch                                          : 1
+ 4-bit latch                                           : 1
+# Multiplexers                                         : 4
+ 32-bit 128-to-1 multiplexer                           : 1
+ 32-bit 15-to-1 multiplexer                            : 1
+ 32-bit 32-to-1 multiplexer                            : 2
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <register_0_31> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_30> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_29> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_28> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_27> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_26> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_25> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_24> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_23> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_22> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_21> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_20> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_19> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_18> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_17> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_16> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_15> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_14> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_13> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_12> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_11> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_10> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_9> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_8> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_7> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_6> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_5> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_4> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_3> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_2> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_1> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_0_0> (without init value) has a constant value of 0 in block <registerfile32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2170 - Unit alu32 : the following signal(s) form a combinatorial loop: old_y_4_shift0005<31>.
+
+Optimizing unit <MIPS_SCP> ...
+
+Optimizing unit <rom> ...
+
+Optimizing unit <slt2> ...
+
+Optimizing unit <mux2_1> ...
+
+Optimizing unit <mux2_2> ...
+
+Optimizing unit <signext> ...
+
+Optimizing unit <Controlunit> ...
+
+Optimizing unit <ram> ...
+
+Optimizing unit <flopr_param> ...
+
+Optimizing unit <registerfile32> ...
+
+Optimizing unit <FA> ...
+
+Optimizing unit <alu32> ...
+
+Optimizing unit <adder> ...
+
+Optimizing unit <Datapath> ...
+WARNING:Xst:1290 - Hierarchical block <imem> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <controller> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <dmem> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <datapathcomp> is unconnected in block <MIPS_SCP>.
+   It will be removed from the design.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MIPS_SCP.ngr
+Top Level Output File Name         : MIPS_SCP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500XL CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+=========================================================================
+
+
+Total REAL time to Xst completion: 60.00 secs
+Total CPU time to Xst completion: 59.55 secs
+ 
+--> 
+
+Total memory usage is 4762500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   51 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

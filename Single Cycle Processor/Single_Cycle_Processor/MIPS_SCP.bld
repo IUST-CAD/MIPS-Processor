@@ -1,0 +1,38 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -i -p xc9500xl MIPS_SCP.ngc MIPS_SCP.ngd
+
+Reading NGO file "F:/Term6/CAD/Project/MIPS-Processor/Single Cycle
+Processor/Single_Cycle_Processor/MIPS_SCP.ngc" ...
+Loading design module "F:\Term6\CAD\Project\MIPS-Processor\Single Cycle
+Processor\Single_Cycle_Processor/MIPS_SCP.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 4389412 kilobytes
+
+Writing NGD file "MIPS_SCP.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "MIPS_SCP.bld"...
