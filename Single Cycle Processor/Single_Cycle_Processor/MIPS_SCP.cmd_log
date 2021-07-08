@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "F:/Term6/CAD/Project/MIPS-Processor/Single Cycle Processor/Single_Cycle_Processor/MIPS_SCP.xst" -ofn "F:/Term6/CAD/Project/MIPS-Processor/Single Cycle Processor/Single_Cycle_Processor/MIPS_SCP.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500xl "MIPS_SCP.ngc" MIPS_SCP.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper MIPS_SCP.ngd 

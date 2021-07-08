@@ -1,0 +1,3 @@
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'MIPS_SCP.ise'.
+ERROR:Cpld:1005 - Design 'MIPS_SCP' has no outputs. 

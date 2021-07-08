@@ -1,0 +1,15 @@
+MO adder NULL adder.v vlg54/adder.bin 1625770358
+MO mux2 NULL mux2.v vlg30/mux2.bin 1625770358
+MO mux3 NULL mux3.v vlg31/mux3.bin 1625770358
+MO FA NULL adder.v vlg1F/_f_a.bin 1625770358
+MO IF_ID NULL IF_ID.v vlg5F/_i_f___i_d.bin 1625770358
+MO hazardunit NULL hazardunit.v vlg42/hazardunit.bin 1625770358
+MO forwardingunit NULL forwardingunit.v vlg7F/forwardingunit.bin 1625770358
+MO flopr_param NULL flopr_param.v vlg7F/flopr__param.bin 1625770358
+MO slt2 NULL sl2.v vlg29/slt2.bin 1625770358
+MO M_WB NULL M_WB.v vlg55/_m___w_b.bin 1625770358
+MO alu32 NULL alu32.v vlg2B/alu32.bin 1625770358
+MO registerfile32 NULL regfile32.v vlg32/registerfile32.bin 1625770358
+MO signext NULL signext.v vlg1E/signext.bin 1625770358
+MO EX_M NULL EX_M.v vlg71/_e_x___m.bin 1625770358
+MO ID_EX NULL ID_EX.v vlg65/_i_d___e_x.bin 1625770358
