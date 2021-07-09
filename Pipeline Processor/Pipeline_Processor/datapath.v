@@ -1,5 +1,4 @@
-// file: Datapath.v
-// author: @mohamed_minawi
+
 
 `include "adder.v"
 `include "alu32.v"

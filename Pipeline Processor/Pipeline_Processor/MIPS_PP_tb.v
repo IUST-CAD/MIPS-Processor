@@ -1,6 +1,4 @@
-// file: MIPS_SCP_tb.v
-// author: @mohamed_minawi
-// Testbench for MIPS_SCP
+
 
 `timescale 1ns/1ns
 
