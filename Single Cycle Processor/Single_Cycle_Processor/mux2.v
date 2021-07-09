@@ -1,6 +1,3 @@
-// file: mux2.v
-// author: @mohamed_minawi
-
 `timescale 1ns/1ns
 
 module mux2 (d0,d1,s,y);

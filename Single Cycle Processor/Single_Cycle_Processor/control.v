@@ -1,7 +1,3 @@
-// Code your design here
-// file: control.v
-// author: @mohamed_minawi
-
 `timescale 1ns/1ns
 
 module Controlunit(input [5:0] Opcode, 
@@ -23,26 +19,19 @@ reg Branch,B;
 always @(*) begin 
 
     case (Opcode) 
-        6'b000000: begin                          // R-type
+        6'b000000: begin                       
                     temp <= 8'b11000000;        
 
                     case (Func)
                     6'b100000: ALUControl <= 4'b0000;    // ADD
-                    6'b100001: ALUControl <= 4'b0000;    // ADDU
                     6'b100010: ALUControl <= 4'b0001;    // SUB
-                    6'b100011: ALUControl <= 4'b0001;    // SUBU
                     6'b100100: ALUControl <= 4'b0010;    // AND
                     6'b100101: ALUControl <= 4'b0011;    // OR
                     6'b100110: ALUControl <= 4'b0100;    // XOR
-                    6'b100111: ALUControl <= 4'b1010;    // NOR
-                    6'b101010: ALUControl <= 4'b1000;    // SLT
-                    6'b101011: ALUControl <= 4'b1001;    // SLTU
+                    6'b101010: ALUControl <= 4'b1000;    // LUI
                     6'b000000: ALUControl <= 4'b0101;    // SLL
                     6'b000010: ALUControl <= 4'b0110;    // SRL
                     6'b000011: ALUControl <= 4'b0111;    // SRA
-                    6'b000100: ALUControl <= 4'b1011;    // SLLV
-                    6'b000110: ALUControl <= 4'b1100;    // SRLV
-                    6'b000111: ALUControl <= 4'b1101;    // SRAV
                 endcase
 
             end
@@ -72,11 +61,6 @@ always @(*) begin
                         ALUControl <= 4'b0000; 
                     end  
 
-        6'b001001: begin                          // ADDIU
-                        temp <= 8'b10100000;  
-                        ALUControl <= 4'b0000; 
-                    end  
-
         6'b001100: begin                          // ANDI
                         temp <= 8'b10100000;  
                         ALUControl <= 4'b0010; 
@@ -91,21 +75,6 @@ always @(*) begin
                         temp <= 8'b10100000;  
                         ALUControl <= 4'b0100; 
                     end       
-
-        6'b001010: begin                          // SLTI
-                        temp <= 8'b10100000;  
-                        ALUControl <= 4'b1000; 
-                    end 
-
-        6'b001011: begin                          // SLTIU
-                        temp <= 8'b10100000;  
-                        ALUControl <= 4'b1001; 
-                    end  
-
-        6'b000010: begin                          // J
-                        temp <= 8'b00000010;  
-                        ALUControl <= 4'b0010; 
-                    end 
                         
         6'b001111:  begin                         // LUI
                         temp <= 8'b10100000;  
