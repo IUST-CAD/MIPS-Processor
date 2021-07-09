@@ -1,6 +1,3 @@
-// file: decoder4.v
-// author: @mohamed_minawi
-
 `timescale 1ns/1ns
 
 module decoder4( input [3:0]   a,

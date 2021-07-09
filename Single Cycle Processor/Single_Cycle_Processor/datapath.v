@@ -1,6 +1,3 @@
-// file: Datapath.v
-// author: @mohamed_minawi
-
 `include "adder.v"
 `include "alu32.v"
 `include "flopr_param.v"
